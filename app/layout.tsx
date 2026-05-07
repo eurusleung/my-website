@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Adrian's Portfolio",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  title: "Eurus 梁入元 | Personal Website",
+  description: "展览项目经理，正在探索AI与编程世界。热爱旅行、阅读和自然，分享外语学习与成长的日常。",
 };
 
 export default function RootLayout({
@@ -17,11 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="zh-CN" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

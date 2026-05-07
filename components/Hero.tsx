@@ -2,11 +2,10 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="h-screen relative flex items-start justify-center">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -29,40 +28,33 @@ const Hero = () => {
        *  0.2 to 0.03
        */}
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+        className="h-full w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
       >
         {/* Radial gradient for the container to give a faded look */}
         <div
-          // chnage the bg to bg-black-100, so it matches the bg color and will blend in
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+      <div className="flex justify-center relative z-10 px-5 pt-52">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center gap-6">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            展览 · 旅行 · 阅读 · 编程
           </p>
 
-          {/**
-           *  Link: https://ui.aceternity.com/components/text-generate-effect
-           *
-           *  change md:text-6xl, add more responsive code
-           */}
-          <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
+          <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold text-purple leading-tight">
+            把生活过成自己喜欢的样子
+          </h1>
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+          <p className="text-center md:tracking-wider text-sm md:text-lg lg:text-2xl">
+            Hi! 我是 Eurus 梁入元，一个在广州的展览项目经理，正在探索 AI 与编程的世界。
           </p>
 
-          <a href="#about">
+          <a href="#about" className="mt-4">
             <MagicButton
-              title="Show my work"
+              title="了解更多"
               icon={<FaLocationArrow />}
               position="right"
             />
