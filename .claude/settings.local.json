@@ -9,7 +9,16 @@
       "Bash(npm run *)",
       "Bash(curl -s http://localhost:3000)",
       "Read(//tmp/**)",
-      "Bash(brew install *)"
+      "Bash(brew install *)",
+      "Bash(git *)",
+      "Bash(gh auth *)",
+      "Bash(ssh-keygen *)",
+      "Bash(pbcopy)",
+      "Bash(ssh-keyscan -p 443 ssh.github.com)",
+      "Bash(npm install *)",
+      "Bash(node *)",
+      "Bash(npx wrangler *)",
+      "Bash(CLOUDFLARE_API_TOKEN=*** npx wrangler *)"
     ]
   }
 }

@@ -215,7 +215,7 @@ export const socialMedia = [
   {
     id: 2,
     img: "/twit.svg",
-    link: "mailto:2944501409@qq.com",
+    link: "mailto:eurusleung@gmail.com",
   },
   {
     id: 3,

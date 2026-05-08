@@ -23,7 +23,7 @@ const Footer = () => {
         <p className="text-white-200 md:mt-10 my-5 text-center">
           无论是展览行业的话题、外语学习的心得，还是 AI 方向的探索，都欢迎来找我聊天。
         </p>
-        <a href="mailto:2944501409@qq.com">
+        <a href="mailto:eurusleung@gmail.com">
           <MagicButton
             title="给我发邮件"
             icon={<FaLocationArrow />}
