@@ -5,10 +5,12 @@ import { defaultData } from "@/data";
 import { buildMessages } from "@/lib/prompts";
 import type { Perspective, ResumeData } from "@/lib/types";
 
-const openai = new OpenAI({
-  apiKey: process.env.DEEPSEEK_API_KEY,
-  baseURL: "https://api.deepseek.com/v1",
-});
+function getOpenAI() {
+  return new OpenAI({
+    apiKey: process.env.DEEPSEEK_API_KEY,
+    baseURL: "https://api.deepseek.com/v1",
+  });
+}
 
 const cache = new Map<string, { data: ResumeData; timestamp: number }>();
 const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
@@ -42,7 +44,7 @@ export async function POST(request: Request) {
     const messages = buildMessages(perspective, defaultData);
 
     // Call DeepSeek
-    const completion = await openai.chat.completions.create({
+    const completion = await getOpenAI().chat.completions.create({
       model: "deepseek-chat",
       messages,
       temperature: 0.7,
