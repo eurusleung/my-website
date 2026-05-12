@@ -15,6 +15,25 @@ function getOpenAI() {
 const cache = new Map<string, { data: ResumeData; timestamp: number }>();
 const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
 
+// Rate limiter: max 10 requests per IP per hour
+const rateLimit = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT_MAX = 10;
+const RATE_LIMIT_WINDOW = 60 * 60 * 1000; // 1 hour
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimit.get(ip);
+  if (!entry || now > entry.resetAt) {
+    rateLimit.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW });
+    return true;
+  }
+  if (entry.count >= RATE_LIMIT_MAX) {
+    return false;
+  }
+  entry.count++;
+  return true;
+}
+
 const VALID_PERSPECTIVES: Perspective[] = [
   "recruiter",
   "business",
@@ -24,6 +43,15 @@ const VALID_PERSPECTIVES: Perspective[] = [
 
 export async function POST(request: Request) {
   try {
+    // Rate limit check
+    const ip = request.headers.get("x-forwarded-for") || "unknown";
+    if (!checkRateLimit(ip)) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429 },
+      );
+    }
+
     const body = await request.json();
     const perspective = body.perspective as Perspective;
 
