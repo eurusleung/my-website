@@ -2,10 +2,13 @@
 
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { projects } from "@/data";
+import { usePerspective } from "@/context/PerspectiveContext";
 import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
+  const { data } = usePerspective();
+  const projects = data.projects;
+
   return (
     <div className="py-20">
       <h1 className="heading">
@@ -15,7 +18,7 @@ const RecentProjects = () => {
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] min-h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer
@@ -32,12 +35,12 @@ const RecentProjects = () => {
                 </div>
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-2">
                 {item.title}
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-xl lg:font-normal font-light text-sm"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",

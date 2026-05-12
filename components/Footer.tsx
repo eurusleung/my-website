@@ -1,9 +1,13 @@
+"use client";
+
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { socialMedia } from "@/data";
+import { usePerspective } from "@/context/PerspectiveContext";
 import MagicButton from "./MagicButton";
 
 const Footer = () => {
+  const { data } = usePerspective();
+  const socialMedia = data.socialMedia;
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}

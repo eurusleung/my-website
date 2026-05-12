@@ -1,9 +1,14 @@
+"use client";
+
 import React from "react";
 
-import { workExperience } from "@/data";
+import { usePerspective } from "@/context/PerspectiveContext";
 import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
+  const { data } = usePerspective();
+  const workExperience = data.workExperience;
+
   return (
     <div className="py-20 w-full">
       <h1 className="heading">

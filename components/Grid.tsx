@@ -1,7 +1,12 @@
-import { gridItems } from "@/data";
+"use client";
+
+import { usePerspective } from "@/context/PerspectiveContext";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 const Grid = () => {
+  const { data } = usePerspective();
+  const gridItems = data.gridItems;
+
   return (
     <section id="about">
       <BentoGrid className="w-full py-20">
