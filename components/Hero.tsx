@@ -36,11 +36,11 @@ const Hero = () => {
 
       <div className="flex justify-center relative z-10 px-5 pt-52">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center gap-6">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-sm">
             {tagline}
           </p>
 
-          <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold text-purple leading-tight">
+          <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold text-purple leading-snug">
             {heading}
           </h1>
 
