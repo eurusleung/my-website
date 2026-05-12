@@ -92,7 +92,7 @@ ${PERSONAL_CONTEXT}
 7. gridItems 中 id=6 的"一起交流吧"卡片保持不变（用于保持交互功能）
 8. socialMedia 保持不变
 9. 可以适当从背景资料中提取具体细节（项目名称、数字、地点等）来丰富内容，但不要编造背景资料中没有的信息
-10. 对于不适合当前视角的细节（比如对教授视角不要提"孔雀型同事"这种说法），选择合适的素材`;
+10. 对于不适合当前视角的细节（比如对学术视角不要提"孔雀型同事"这种说法），选择合适的素材`;
 
 const STRATEGIES: Record<Exclude<Perspective, "default">, string> = {
   recruiter: `- 突出工作经历中的项目数量和复杂度：十多个高规格会议/展览项目，覆盖网络安全、旅游、美妆、汽车等多个行业
@@ -147,7 +147,7 @@ function buildSystemPrompt(perspective: Perspective): string {
         ? "商务合作"
         : perspective === "reader"
           ? "同频的人"
-          : "教授";
+          : "学术视角";
 
   return BASE_PROMPT.replace("{perspectiveLabel}", label).replace(
     "{strategy}",

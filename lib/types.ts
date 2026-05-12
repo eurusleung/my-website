@@ -75,5 +75,5 @@ export const PERSPECTIVE_LABELS: Record<Perspective, string> = {
   recruiter: "招聘方",
   business: "商务合作",
   reader: "同频的人",
-  professor: "教授",
+  professor: "学术视角",
 };
