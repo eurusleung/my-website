@@ -47,7 +47,7 @@ export async function POST(request: Request) {
     const completion = await getOpenAI().chat.completions.create({
       model: "deepseek-chat",
       messages,
-      temperature: 0.7,
+      temperature: 0,
       max_tokens: 4096,
     });
 
