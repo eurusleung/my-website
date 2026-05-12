@@ -1,4 +1,4 @@
-import type { ResumeData } from "@/lib/types";
+import type { ResumeData } from "../lib/types";
 
 export const heroData = {
   tagline: "展览 · 旅行 · 阅读 · 编程",
