@@ -4,18 +4,27 @@ import {
   createContext,
   useCallback,
   useContext,
-  useEffect,
   useState,
 } from "react";
 
 import { defaultData } from "@/data";
+import recruiterData from "@/data/perspectives/recruiter.json";
+import businessData from "@/data/perspectives/business.json";
+import readerData from "@/data/perspectives/reader.json";
+import professorData from "@/data/perspectives/professor.json";
 import type { Perspective, ResumeData } from "@/lib/types";
 import { PERSPECTIVE_LABELS } from "@/lib/types";
+
+const PERSPECTIVE_DATA: Record<Exclude<Perspective, "default">, ResumeData> = {
+  recruiter: recruiterData as ResumeData,
+  business: businessData as ResumeData,
+  reader: readerData as ResumeData,
+  professor: professorData as ResumeData,
+};
 
 interface PerspectiveContextValue {
   perspective: Perspective;
   data: ResumeData;
-  loading: boolean;
   switchPerspective: (p: Perspective) => void;
   perspectives: Array<{ key: Perspective; label: string }>;
 }
@@ -23,7 +32,6 @@ interface PerspectiveContextValue {
 const PerspectiveContext = createContext<PerspectiveContextValue>({
   perspective: "default",
   data: defaultData,
-  loading: false,
   switchPerspective: () => {},
   perspectives: [],
 });
@@ -36,72 +44,17 @@ const PERSPECTIVES: Array<{ key: Perspective; label: string }> = [
   { key: "professor", label: PERSPECTIVE_LABELS.professor },
 ];
 
-const CACHE_PREFIX = "resume_perspective_";
-
-function getCachedData(perspective: Perspective): ResumeData | null {
-  try {
-    const cached = localStorage.getItem(CACHE_PREFIX + perspective);
-    if (cached) {
-      return JSON.parse(cached) as ResumeData;
-    }
-  } catch {
-    // localStorage not available or corrupted
-  }
-  return null;
-}
-
-function setCachedData(perspective: Perspective, data: ResumeData) {
-  try {
-    localStorage.setItem(CACHE_PREFIX + perspective, JSON.stringify(data));
-  } catch {
-    // localStorage full or unavailable
-  }
-}
-
 export function PerspectiveProvider({ children }: { children: React.ReactNode }) {
   const [perspective, setPerspective] = useState<Perspective>("default");
   const [data, setData] = useState<ResumeData>(defaultData);
-  const [loading, setLoading] = useState(false);
 
   const switchPerspective = useCallback(
-    async (p: Perspective) => {
-      if (p === "default") {
-        setPerspective("default");
-        setData(defaultData);
-        return;
-      }
-
-      // Check client cache
-      const cached = getCachedData(p);
-      if (cached) {
-        setPerspective(p);
-        setData(cached);
-        return;
-      }
-
-      setLoading(true);
+    (p: Perspective) => {
       setPerspective(p);
-
-      try {
-        const res = await fetch("/api/resume", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ perspective: p }),
-        });
-
-        if (!res.ok) {
-          throw new Error("API error");
-        }
-
-        const newData: ResumeData = await res.json();
-        setCachedData(p, newData);
-        setData(newData);
-      } catch (err) {
-        console.error("Failed to fetch perspective data:", err);
-        // Fall back to default data but keep the perspective
+      if (p === "default") {
         setData(defaultData);
-      } finally {
-        setLoading(false);
+      } else {
+        setData(PERSPECTIVE_DATA[p]);
       }
     },
     [],
@@ -112,7 +65,6 @@ export function PerspectiveProvider({ children }: { children: React.ReactNode })
       value={{
         perspective,
         data,
-        loading,
         switchPerspective,
         perspectives: PERSPECTIVES,
       }}

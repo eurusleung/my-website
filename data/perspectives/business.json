@@ -1,0 +1,256 @@
+{
+  "heroData": {
+    "tagline": "会展项目 · 商业策划 · 内容运营 · 技术赋能",
+    "heading": "从方案到落地，全流程会展服务伙伴",
+    "subheading": "Hi! 我是 Eurus 梁入元，中山大学行政管理毕业，拥有两年会展行业项目管理经验，服务过政府会议、国际论坛、企业营销活动及展会策展，正在用技术手段提升业务效率。"
+  },
+  "navItems": [
+    {
+      "name": "关于我",
+      "link": "#about"
+    },
+    {
+      "name": "个人项目",
+      "link": "#projects"
+    },
+    {
+      "name": "格言",
+      "link": "#testimonials"
+    },
+    {
+      "name": "联系我",
+      "link": "#contact"
+    }
+  ],
+  "gridItems": [
+    {
+      "id": 1,
+      "title": "Hi，我是梁入元 Eurus，中山大学行政管理专业毕业，两年会展行业项目管理经验，服务过政府会议、国际论坛、企业营销活动及展会策展，从方案到执行全流程负责 🚀",
+      "description": "",
+      "className": "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      "imgClassName": "w-full h-full",
+      "titleClassName": "justify-end",
+      "img": "/b1.svg",
+      "spareImg": ""
+    },
+    {
+      "id": 2,
+      "title": "深度参与 2026 年大湾区（广州）国际眼镜展从 0 到 1 全流程，负责策展、招展与展会运营；参与 2024、2025 年广东国际旅游产业博览会招展及嘉宾接待。",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2",
+      "imgClassName": "",
+      "titleClassName": "justify-start",
+      "img": "",
+      "spareImg": ""
+    },
+    {
+      "id": 3,
+      "title": "技术赋能业务",
+      "description": "用 Claude Code 搭建个人网站及 AI 商业视觉定制网站，正在系统学习编程，探索用技术手段提升会展业务效率与客户体验。",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2",
+      "imgClassName": "",
+      "titleClassName": "justify-center",
+      "img": "",
+      "spareImg": ""
+    },
+    {
+      "id": 4,
+      "title": "统筹执行多场高规格会议：国家网络安全宣传周、APEC 广州高官会、世界银行中大会议、中非检察论坛、广日电梯全球营销大会等，擅长嘉宾接待与食宿交通管理。",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1",
+      "imgClassName": "",
+      "titleClassName": "justify-start",
+      "img": "/grid.svg",
+      "spareImg": "/b4.svg"
+    },
+    {
+      "id": 5,
+      "title": "运营个人公众号「工位主理人的外语提升日记」，已更新 32 篇，分享外语学习与阅读笔记，具备内容营销与品牌运营经验。",
+      "description": "内容运营 · 品牌传播",
+      "className": "md:col-span-3 md:row-span-2",
+      "imgClassName": "absolute right-0 bottom-0 md:w-96 w-60",
+      "titleClassName": "justify-center md:justify-start lg:justify-center",
+      "img": "/b5.svg",
+      "spareImg": "/grid.svg"
+    },
+    {
+      "id": 6,
+      "title": "一起交流吧！",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1",
+      "imgClassName": "",
+      "titleClassName": "justify-center md:max-w-full max-w-60 text-center",
+      "img": "",
+      "spareImg": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "会展项目案例集",
+      "des": "服务过国家网络安全宣传周、APEC 广州高官会、世界银行中大会议、中非检察论坛、广日电梯全球营销大会、广东国际旅游产业博览会、大湾区国际眼镜展等，涵盖政府会议、国际论坛、企业活动及展会策展，从方案到执行全流程负责。",
+      "img": "/p1.svg",
+      "iconLists": [
+        "/re.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/three.svg",
+        "/fm.svg"
+      ],
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "title": "商业策划 · 岭秀创享大赛",
+      "des": "代表公司参加岭南集团 2024 岭秀创享大赛，撰写「体育+旅游：粤闽徒步新探索」商业计划书，获得三等奖，具备商业策划与方案撰写能力。",
+      "img": "/p2.svg",
+      "iconLists": [
+        "/next.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/stream.svg",
+        "/c.svg"
+      ],
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "公众号运营 · 内容营销",
+      "des": "2025 年 11 月起运营个人公众号「工位主理人的外语提升日记」，已更新 32 篇，记录英语和西班牙语学习过程，分享阅读笔记与成长感悟，具备内容策划与品牌运营经验。",
+      "img": "/p3.svg",
+      "iconLists": [
+        "/re.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/three.svg",
+        "/c.svg"
+      ],
+      "link": "https://mp.weixin.qq.com"
+    },
+    {
+      "id": 4,
+      "title": "技术赋能 · AI 与编程",
+      "des": "用 Claude Code 从零搭建个人网站及 AI 商业视觉定制网站，正在系统学习编程，探索用技术手段提升会展业务效率与客户体验，跨界背景带来差异化优势。",
+      "img": "/p4.svg",
+      "iconLists": [
+        "/next.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/three.svg",
+        "/gsap.svg"
+      ],
+      "link": "#"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "会展就像媒婆，把供需双方拉到一起——但 AI 正在重塑这一切，我想站在浪潮的这一边，用技术手段提升业务效率。",
+      "name": "Eurus 的信念",
+      "title": "跨界探索者",
+      "img": "/avatar1.svg"
+    },
+    {
+      "quote": "从方案到执行全流程负责，服务过政府会议、国际论坛、企业营销活动及展会策展，类型多元，结果导向。",
+      "name": "关于服务",
+      "title": "项目落地专家",
+      "img": "/avatar2.svg"
+    },
+    {
+      "quote": "青春太宝贵了，要在最有精力的时候去做轰轰烈烈的事业。普通人的生活很脆弱，所以要珍惜安稳时的幸福。",
+      "name": "关于生活",
+      "title": "活在当下",
+      "img": "/avatar3.svg"
+    },
+    {
+      "quote": "从展览行业跨界到编程和 AI，这是一条少有人走的路。既懂会展业务又懂技术趋势，这是我的差异化优势。",
+      "name": "关于转型",
+      "title": "探索者",
+      "img": "/avatar4.svg"
+    },
+    {
+      "quote": "喜欢绿色，因为它代表着生长和希望。窗台上那些活下来的花花草草，即使养死了几盆，我还是会继续买新的——屡败屡战，生生不息。",
+      "name": "关于热爱",
+      "title": "植物爱好者（不放弃版）",
+      "img": "/avatar5.svg"
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "Travel",
+      "img": "/cloud.svg",
+      "nameImg": "/cloudName.svg"
+    },
+    {
+      "id": 2,
+      "name": "Reading",
+      "img": "/app.svg",
+      "nameImg": "/appName.svg"
+    },
+    {
+      "id": 3,
+      "name": "Badminton",
+      "img": "/host.svg",
+      "nameImg": "/hostName.svg"
+    },
+    {
+      "id": 4,
+      "name": "Plants",
+      "img": "/s.svg",
+      "nameImg": "/streamName.svg"
+    },
+    {
+      "id": 5,
+      "name": "Spanish",
+      "img": "/dock.svg",
+      "nameImg": "/dockerName.svg"
+    }
+  ],
+  "workExperience": [
+    {
+      "id": 1,
+      "title": "展览招展与策展",
+      "desc": "深度参与 2026 年大湾区（广州）国际眼镜展从 0 到 1 的全流程，负责策展、招展与展会运营；参与 2024、2025 年广东国际旅游产业博览会招展及嘉宾接待工作。",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp1.svg"
+    },
+    {
+      "id": 2,
+      "title": "会务策划与嘉宾管理",
+      "desc": "统筹执行多场高规格会议活动：2024 国家网络安全宣传周（食宿板块嘉宾接待）、广日电梯 2025 全球营销大会（嘉宾信息、食宿、交通、考察）、世界银行中大会议、中非检察论坛、APEC 广州第一次高官会等。",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp2.svg"
+    },
+    {
+      "id": 3,
+      "title": "团建策划与商业方案",
+      "desc": "为百胜集团等企业策划多场多地团建活动；代表公司参加岭南集团 2024 岭秀创享大赛，撰写「体育+旅游：粤闽徒步新探索」商业计划书，获得三等奖。",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp3.svg"
+    },
+    {
+      "id": 4,
+      "title": "转型探索 · 编程与 AI",
+      "desc": "2026 年起用 Claude Code 从零搭建个人网站及 AI 商业视觉定制网站，正在系统学习编程，探索用技术手段提升会展业务效率与客户体验，跨界背景带来差异化优势。",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp4.svg"
+    }
+  ],
+  "socialMedia": [
+    {
+      "id": 1,
+      "img": "/git.svg",
+      "link": "https://github.com/eurusleung"
+    },
+    {
+      "id": 2,
+      "img": "/twit.svg",
+      "link": "mailto:eurusleung@gmail.com"
+    },
+    {
+      "id": 3,
+      "img": "/link.svg",
+      "link": "https://mp.weixin.qq.com"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "heroData": {
+    "tagline": "展览 · 旅行 · 阅读 · 编程",
+    "heading": "把生活过成自己喜欢的样子",
+    "subheading": "Hi! 我是 Eurus 梁入元，中大行政管理毕业，从展览行业出发，正在用 Claude Code 探索编程与 AI 的新可能。很高兴遇见同频的你。"
+  },
+  "navItems": [
+    {
+      "name": "关于我",
+      "link": "#about"
+    },
+    {
+      "name": "个人项目",
+      "link": "#projects"
+    },
+    {
+      "name": "格言",
+      "link": "#testimonials"
+    },
+    {
+      "name": "联系我",
+      "link": "#contact"
+    }
+  ],
+  "gridItems": [
+    {
+      "id": 1,
+      "title": "Hi，我是梁入元 Eurus，中山大学行政管理专业毕业，两年会展行业项目管理经验，正在学习编程和 AI 🌿 公众号写了32篇，养了一窗台花花草草，羽毛球打了十几年，西班牙语刚学会字母发音——这些就是我现在的日常。",
+      "description": "",
+      "className": "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      "imgClassName": "w-full h-full",
+      "titleClassName": "justify-end",
+      "img": "/b1.svg",
+      "spareImg": ""
+    },
+    {
+      "id": 2,
+      "title": "热爱旅行，去过张家界、北京、无锡、上海、香港……张家界的山让我觉得人很渺小，北京的厚重让我想多读点书，无锡的温柔让我想在那里养老。一年2-4次出发，每次都是充电。",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2",
+      "imgClassName": "",
+      "titleClassName": "justify-start",
+      "img": "",
+      "spareImg": ""
+    },
+    {
+      "id": 3,
+      "title": "正在学习的技术方向",
+      "description": "用 Claude Code 搭建个人网站，正在系统学习 AI 和编程。从展览行业跨界过来，每一步都像在爬一座陌生的山，但山顶的风景值得期待。",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2",
+      "imgClassName": "",
+      "titleClassName": "justify-center",
+      "img": "",
+      "spareImg": ""
+    },
+    {
+      "id": 4,
+      "title": "羽毛球老手 🏸 养了一窗台花花草草：大叶落地生根、两种多肉、薄荷、芦荟、金边吊兰、一株发芽的向日葵。活下来的都是勇士，养死了就再买——植物杀手的倔强 🌱 西班牙语入门 🇪🇸",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1",
+      "imgClassName": "",
+      "titleClassName": "justify-start",
+      "img": "/grid.svg",
+      "spareImg": "/b4.svg"
+    },
+    {
+      "id": 5,
+      "title": "运营个人公众号「工位主理人的外语提升日记」，从2025年11月26日到现在写了32篇。最初只是想鞭策自己学外语，后来变成了英语+西班牙语学习记录和阅读笔记的分享地。如果你也在学语言或者想开始写点什么，欢迎来聊聊。",
+      "description": "阅读 · 外语 · 成长",
+      "className": "md:col-span-3 md:row-span-2",
+      "imgClassName": "absolute right-0 bottom-0 md:w-96 w-60",
+      "titleClassName": "justify-center md:justify-start lg:justify-center",
+      "img": "/b5.svg",
+      "spareImg": "/grid.svg"
+    },
+    {
+      "id": 6,
+      "title": "一起交流吧！",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1",
+      "imgClassName": "",
+      "titleClassName": "justify-center md:max-w-full max-w-60 text-center",
+      "img": "",
+      "spareImg": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "工位主理人的外语提升日记",
+      "des": "2025年11月26日至今，已更新32篇。记录英语和西班牙语的学习过程，也分享阅读笔记和成长感悟。从三天打鱼两天晒网，到慢慢养成习惯——如果你也在学语言，这里或许有你的影子。",
+      "img": "/p1.svg",
+      "iconLists": [
+        "/re.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/three.svg",
+        "/fm.svg"
+      ],
+      "link": "https://mp.weixin.qq.com"
+    },
+    {
+      "id": 2,
+      "title": "旅行足迹 · 走过的山川湖海",
+      "des": "走过广东各地、长沙、张家界、香港、澳门、北京、无锡、苏州、上海……张家界的山让我觉得人很渺小，北京的厚重让我想多读点书，无锡的温柔让我想在那里养老。一年2-4次出发，用镜头和文字记录每一段与自然相遇的故事。",
+      "img": "/p2.svg",
+      "iconLists": [
+        "/next.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/stream.svg",
+        "/c.svg"
+      ],
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "阅读笔记与书单",
+      "des": "正经书读了300本左右，小说、散文、成长类居多。一般不写笔记，除非发在公众号上——所以公众号上的每一篇读书笔记，都是认真对待的。努力做一个有输入也有输出的人。",
+      "img": "/p3.svg",
+      "iconLists": [
+        "/re.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/three.svg",
+        "/c.svg"
+      ],
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "title": "AI 与编程学习之路",
+      "des": "用 Claude Code 从零搭建了个人网站和 AI 商业视觉定制网站。Python 基本忘了，全靠 AI 辅助编程。从展览行业跨界过来，不是成功学，是真实的挣扎和探索——目标是找到一份有社会价值感的事业。",
+      "img": "/p4.svg",
+      "iconLists": [
+        "/next.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/three.svg",
+        "/gsap.svg"
+      ],
+      "link": "#"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "杀不死你的只会让你更强大。成长是痛苦的，因为要改掉身上根深蒂固的毛病——但每一步都算数。考研复试差一名落榜的时候，我以为天塌了，后来发现那只是另一段路的开始。",
+      "name": "Eurus 的信念",
+      "title": "终身成长者",
+      "img": "/avatar1.svg"
+    },
+    {
+      "quote": "旅行的意义不在于打卡多少地方，而在于那些让你停下来深呼吸的瞬间——张家界的山风、北京胡同里的阳光、无锡太湖边的晚霞。",
+      "name": "关于旅行",
+      "title": "自然爱好者",
+      "img": "/avatar2.svg"
+    },
+    {
+      "quote": "青春太宝贵了，要在最有精力的时候去做轰轰烈烈的事业。普通人的生活很脆弱，所以要珍惜安稳时的幸福。从会展行业到编程，我选择在还能折腾的时候折腾一下。",
+      "name": "关于生活",
+      "title": "活在当下",
+      "img": "/avatar3.svg"
+    },
+    {
+      "quote": "从展览行业跨界到编程和 AI，这是一条少有人走的路。会展就像媒婆，把供需双方拉到一起——但 AI 正在重塑这一切，我想站在浪潮的这一边。不是因为我多厉害，而是因为我觉得这件事值得做。",
+      "name": "关于转型",
+      "title": "探索者",
+      "img": "/avatar4.svg"
+    },
+    {
+      "quote": "喜欢绿色，因为它代表着生长和希望。窗台上那些活下来的花花草草——大叶落地生根、薄荷、芦荟、金边吊兰——即使养死了几盆，我还是会继续买新的。屡败屡战，生生不息，就像我学西班牙语一样。",
+      "name": "关于热爱",
+      "title": "植物爱好者（不放弃版）",
+      "img": "/avatar5.svg"
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "Travel",
+      "img": "/cloud.svg",
+      "nameImg": "/cloudName.svg"
+    },
+    {
+      "id": 2,
+      "name": "Reading",
+      "img": "/app.svg",
+      "nameImg": "/appName.svg"
+    },
+    {
+      "id": 3,
+      "name": "Badminton",
+      "img": "/host.svg",
+      "nameImg": "/hostName.svg"
+    },
+    {
+      "id": 4,
+      "name": "Plants",
+      "img": "/s.svg",
+      "nameImg": "/streamName.svg"
+    },
+    {
+      "id": 5,
+      "name": "Spanish",
+      "img": "/dock.svg",
+      "nameImg": "/dockerName.svg"
+    }
+  ],
+  "workExperience": [
+    {
+      "id": 1,
+      "title": "展览招展与策展",
+      "desc": "深度参与2026年大湾区（广州）国际眼镜展从0到1的全流程，负责策展、招展与展会运营；参与2024、2025年广东国际旅游产业博览会招展及嘉宾接待工作。展览本质是'媒婆'，把供需双方面对面拉在一起——这个比喻是我自己琢磨出来的。",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp1.svg"
+    },
+    {
+      "id": 2,
+      "title": "会务策划与嘉宾管理",
+      "desc": "统筹执行多场高规格会议活动：2024国家网络安全宣传周（食宿板块嘉宾接待）、广日电梯2025全球营销大会（嘉宾信息、食宿、交通、考察）、世界银行中大会议、中非检察论坛、APEC广州第一次高官会等。这些经历让我学会了在高压下保持冷静。",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp2.svg"
+    },
+    {
+      "id": 3,
+      "title": "团建策划与商业方案",
+      "desc": "为百胜集团等企业策划多场多地团建活动；代表公司参加岭南集团2024岭秀创享大赛，撰写「体育+旅游：粤闽徒步新探索」商业计划书，获得三等奖。做团建的时候，我发现我其实很喜欢'把人聚在一起'这件事。",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp3.svg"
+    },
+    {
+      "id": 4,
+      "title": "转型探索 · 编程与 AI",
+      "desc": "2026年起用Claude Code从零搭建个人网站及AI商业视觉定制网站。Python基本忘了，全靠AI辅助编程。从会展行业跨界过来，不是成功学，是真实的挣扎和探索——目标是找到一份有社会价值感的事业。",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp4.svg"
+    }
+  ],
+  "socialMedia": [
+    {
+      "id": 1,
+      "img": "/git.svg",
+      "link": "https://github.com/eurusleung"
+    },
+    {
+      "id": 2,
+      "img": "/twit.svg",
+      "link": "mailto:eurusleung@gmail.com"
+    },
+    {
+      "id": 3,
+      "img": "/link.svg",
+      "link": "https://mp.weixin.qq.com"
+    }
+  ]
+}
